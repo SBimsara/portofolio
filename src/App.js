@@ -2,27 +2,13 @@ import logo from './logo.svg';
 import "./styles/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome,faUser,faBriefcase,faNewspaper,faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
+import { faHome,faUser,faBriefcase,faNewspaper,faEnvelopeOpen,faDownload } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
+
+import myImage from './assets/images/me.png'
 
 function App() {
 
-  const sections = document.querySelectorAll('.section');
-  const sectBtns = document.querySelectorAll('.controls');
-  const sectBtn = document.querySelectorAll('.control');
-  const allSections = document.querySelectorAll('.main-content');
-
-  // function PageTransition() {
-
-  //   //Button click active class
-  //   for(let i=0; i<sectBtn.length; i++) {
-  //     sectBtn[i].addEventListener('click',(event) => {
-  //       let currentBtn = document.querySelectorAll('.active-btn');
-  //       currentBtn[0].classList = currentBtn[0].className.replace ('active-btn', '');
-  //       this.className += 'active-btn';
-  //     })
-  //   }
-  // }
 
   //Button click active class
   function handleToggleIcon(event) {
@@ -39,7 +25,10 @@ function App() {
   //Section Active class
   function handleToggleSection(event) {
     const clickedSectionId = event.target.getAttribute('data-id');
+
     const clickedSection = document.getElementById(clickedSectionId);
+
+
     const sections = document.querySelectorAll('.section');
     sections.forEach((section) => {
       if (section !== clickedSection) {
@@ -52,7 +41,33 @@ function App() {
   return (
     <div className="main-content">
       <header className='section sec1 header active' id='home'>
-    
+        <div className='header-content'>
+          <div className='left-header'>
+            <div className='h-shape'></div>
+            <div className='image'>
+              <img src={myImage} alt=''/>
+            </div>
+
+          </div>
+
+          <div className='right-header'>
+            <h1 className='name'>
+              Hi,I'm <span>Sithira Bimsara</span>
+              A University Student
+            </h1>
+            <p>
+            I am an IT university student with a passion for technology and a solid foundation in programming, database management, network security, and web development. 
+            I am a continuous learner who keeps up to date with the latest trends in the field. 
+            I have experience working on real-world projects and collaborating with others. 
+            My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
+            </p>
+
+            <a href='' className='main-btn'>
+              <span className='btn-text'>Download CV</span>
+              <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+            </a>
+          </div>
+        </div>  
       </header>
       <main>
 
