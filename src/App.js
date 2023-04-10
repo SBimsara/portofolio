@@ -24,6 +24,7 @@ function App() {
   //   }
   // }
 
+  //Button click active class
   function handleToggleIcon(event) {
     const clickedControl = event.target;
     const controls = document.querySelectorAll('.control');
@@ -35,23 +36,36 @@ function App() {
     clickedControl.classList.add('active-btn');
   }
 
+  //Section Active class
+  function handleToggleSection(event) {
+    const clickedSectionId = event.target.getAttribute('data-id');
+    const clickedSection = document.getElementById(clickedSectionId);
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((section) => {
+      if (section !== clickedSection) {
+        section.classList.remove('active');
+      }
+    });
+    clickedSection.classList.add('active');
+  }
+
   return (
     <div className="main-content">
-      <header className='section sec1 header active'>
+      <header className='section sec1 header active' id='home'>
     
       </header>
       <main>
 
-        <section className='section sec2 about'> </section>
-        <section className='section sec3 portofolio'></section>
-        <section className='section sec4 blog'></section>
-        <section className='section sec5 contact'></section>
+        <section className='section sec2 about' id='about'> </section>
+        <section className='section sec3 portofolio' id='portofolio'></section>
+        <section className='section sec4 blogs' id='blogs'></section>
+        <section className='section sec5 contact' id='contact'></section>
 
       </main>
 
-      <div className='controls' onClick={handleToggleIcon}>
+      <div className='controls' onClick={(event)=> {handleToggleIcon(event);handleToggleSection(event)}}>
 
-        <div className='control control-1 active-btn' data-id= 'header' >
+        <div className='control control-1 active-btn' data-id= 'home' >
           <i><FontAwesomeIcon icon={faHome} /></i>
         </div>
         <div className='control control-2' data-id= 'about' >
