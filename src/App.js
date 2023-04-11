@@ -73,7 +73,55 @@ function App() {
       </header>
       <main>
 
-        <section className='section sec2 about' id='about'> </section>
+        <section className='section sec2 about' id='about'>
+          <div className='main-title'>
+            <h2>About <span>me</span><span className='bg-text'>my status</span></h2>
+
+          </div>
+          <div className='about-container'>
+            <div className='left-about'>
+              <h4>Information About me</h4>
+              <p>
+
+              </p>
+              <div className='btn-con'>
+              <a href='' className='main-btn'>
+                <span className='btn-text'>Download CV</span>
+                <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+              </a> 
+            </div>
+            </div>
+            <div className='right-about'>
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br/>Completed</p>
+                </div>
+              </div>
+
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br/>Completed</p>
+                </div>
+              </div>
+
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br/>Completed</p>
+                </div>
+              </div>
+
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br/>Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className='section sec3 portofolio' id='portofolio'></section>
         <section className='section sec4 blogs' id='blogs'></section>
         <section className='section sec5 contact' id='contact'></section>
