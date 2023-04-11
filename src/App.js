@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import "./styles/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome,faUser,faBriefcase,faNewspaper,faEnvelopeOpen,faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
 
 import myImage from './assets/images/me.png'
@@ -45,7 +45,7 @@ function App() {
           <div className='left-header'>
             <div className='h-shape'></div>
             <div className='image'>
-              <img src={myImage} alt=''/>
+              <img src={myImage} alt='' />
             </div>
 
           </div>
@@ -53,23 +53,23 @@ function App() {
           <div className='right-header'>
             <h1 className='name'>
               Hi, I'm <span>Sithira Bimsara.</span>
-              <br/>An University Undergraduate
+              <br />An University Undergraduate
             </h1>
             <p>
-            I am an IT university undergraduate with a passion for technology and a solid foundation in programming, database management, network security, and web development. 
-            I am a continuous learner who keeps up to date with the latest trends in the field. 
-            My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
+              I am an IT university undergraduate with a passion for technology and a solid foundation in programming, database management, network security, and web development.
+              I am a continuous learner who keeps up to date with the latest trends in the field.
+              My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
             </p>
-    
+
             <div className='btn-con'>
               <a href='' className='main-btn'>
                 <span className='btn-text'>Download CV</span>
                 <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
-              </a> 
+              </a>
             </div>
 
           </div>
-        </div>  
+        </div>
       </header>
       <main>
 
@@ -85,38 +85,53 @@ function App() {
 
               </p>
               <div className='btn-con'>
-              <a href='' className='main-btn'>
-                <span className='btn-text'>Download CV</span>
-                <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
-              </a> 
-            </div>
+                <a href='' className='main-btn'>
+                  <span className='btn-text'>Download CV</span>
+                  <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+                </a>
+              </div>
             </div>
             <div className='right-about'>
               <div className='about-item'>
                 <div className='abt-text'>
                   <p className='large-text'>2+</p>
-                  <p className='small-text'>Projects <br/>Completed</p>
+                  <p className='small-text'>Projects <br />Completed</p>
                 </div>
               </div>
 
               <div className='about-item'>
                 <div className='abt-text'>
                   <p className='large-text'>2+</p>
-                  <p className='small-text'>Projects <br/>Completed</p>
+                  <p className='small-text'>Projects <br />Completed</p>
                 </div>
               </div>
 
               <div className='about-item'>
                 <div className='abt-text'>
                   <p className='large-text'>2+</p>
-                  <p className='small-text'>Projects <br/>Completed</p>
+                  <p className='small-text'>Projects <br />Completed</p>
                 </div>
               </div>
 
               <div className='about-item'>
                 <div className='abt-text'>
                   <p className='large-text'>2+</p>
-                  <p className='small-text'>Projects <br/>Completed</p>
+                  <p className='small-text'>Projects <br />Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='about-stats'>
+            <h4 className='stat-title'>My Skills</h4>
+            <div className='progress-bars'>
+              <div className='progress-bar'>
+                <p className='prog-title'>html5</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>75%</p>
+                  <div className='progress'>
+                    <span className='html'></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,26 +143,26 @@ function App() {
 
       </main>
 
-      <div className='controls' onClick={(event)=> {handleToggleIcon(event);handleToggleSection(event)}}>
+      <div className='controls' onClick={(event) => { handleToggleIcon(event); handleToggleSection(event) }}>
 
-        <div className='control control-1 active-btn' data-id= 'home' >
+        <div className='control control-1 active-btn' data-id='home' >
           <i><FontAwesomeIcon icon={faHome} /></i>
         </div>
-        <div className='control control-2' data-id= 'about' >
+        <div className='control control-2' data-id='about' >
           <i><FontAwesomeIcon icon={faUser} /></i>
         </div>
-        <div className='control control-3' data-id= 'portofolio'>
+        <div className='control control-3' data-id='portofolio'>
           <i><FontAwesomeIcon icon={faBriefcase} /></i>
         </div>
-        <div className='control control-4' data-id= 'blogs'>
+        <div className='control control-4' data-id='blogs'>
           <i><FontAwesomeIcon icon={faNewspaper} /></i>
         </div>
-        <div className='control control-5' data-id= 'contact'>
+        <div className='control control-5' data-id='contact'>
           <i><FontAwesomeIcon icon={faEnvelopeOpen} /></i>
         </div>
 
       </div>
-      
+
     </div>
   );
 }
