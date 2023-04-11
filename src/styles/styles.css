@@ -201,7 +201,6 @@ section {
 
 .main-btn {
   border-radius: 30px;
-  height: 100%;
   color: inherit;
   font-weight: 600;
   position: relative;
@@ -216,7 +215,7 @@ section {
   padding: 0 2rem;
 }
 .main-btn .btn-icon {
-  height: 85%;
+  width: 27%;
   background-color: var(--color-secondary);
   display: flex;
   align-items: center;

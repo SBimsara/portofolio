@@ -53,10 +53,10 @@ function App() {
           <div className='right-header'>
             <h1 className='name'>
               Hi, I'm <span>Sithira Bimsara.</span>
-              <br/>A University Student
+              <br/>An University Undergraduate
             </h1>
             <p>
-            I am an IT university student with a passion for technology and a solid foundation in programming, database management, network security, and web development. 
+            I am an IT university undergraduate with a passion for technology and a solid foundation in programming, database management, network security, and web development. 
             I am a continuous learner who keeps up to date with the latest trends in the field. 
             My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
             </p>
