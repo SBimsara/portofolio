@@ -52,7 +52,7 @@ function App() {
 
           <div className='right-header'>
             <h1 className='name'>
-              Hi, I'm <span>Sithira Bimsara</span>
+              Hi, I'm <span>Sithira Bimsara.</span>
               <br/>A University Student
             </h1>
             <p>
@@ -60,11 +60,14 @@ function App() {
             I am a continuous learner who keeps up to date with the latest trends in the field. 
             My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
             </p>
+    
+            <div className='btn-con'>
+              <a href='' className='main-btn'>
+                <span className='btn-text'>Download CV</span>
+                <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+              </a> 
+            </div>
 
-            <a href='' className='main-btn'>
-              <span className='btn-text'>Download CV</span>
-              <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
-            </a>
           </div>
         </div>  
       </header>
