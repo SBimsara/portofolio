@@ -134,10 +134,101 @@ function App() {
                   </div>
                 </div>
               </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>css3</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>75%</p>
+                  <div className='progress'>
+                    <span className='css'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>javascript</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>55%</p>
+                  <div className='progress'>
+                    <span className='js'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>java</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>75%</p>
+                  <div className='progress'>
+                    <span className='java'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>python</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>60%</p>
+                  <div className='progress'>
+                    <span className='py'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>mySQL</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>85%</p>
+                  <div className='progress'>
+                    <span className='sql'></span>
+                  </div>
+                </div>
+              </div>
+
+              
+
             </div>
           </div>
+          <h4 className='stat-title'>My Timeline</h4>
+          <div className='timeline'>
+            <div className='timeline-item'>
+              <div className='t1-icon'>
+                <i><FontAwesomeIcon icon={faBriefcase} /></i>
+              </div>
+              <p className='t1-duration'>2010 - 2015</p>
+              <h5> <span></span></h5>
+              <p>
+
+              </p>
+            </div>
+
+            <div className='timeline-item'>
+              <div className='t1-icon'>
+                <i><FontAwesomeIcon icon={faBriefcase} /></i>
+              </div>
+              <p className='t1-duration'>2016 - 2019</p>
+              <h5> <span></span></h5>
+              <p>
+
+              </p>
+            </div>
+
+            <div className='timeline-item'>
+              <div className='t1-icon'>
+                <i><FontAwesomeIcon icon={faBriefcase} /></i>
+              </div>
+              <p className='t1-duration'>2021 - Present</p>
+              <h5> <span></span></h5>
+              <p>
+
+              </p>
+            </div>
+
+          </div>
         </section>
-        <section className='section sec3 portofolio' id='portofolio'></section>
+        <section className='section sec3 portfolio' id='portfolio'>
+        
+        </section>
         <section className='section sec4 blogs' id='blogs'></section>
         <section className='section sec5 contact' id='contact'></section>
 
@@ -151,7 +242,7 @@ function App() {
         <div className='control control-2' data-id='about' >
           <i><FontAwesomeIcon icon={faUser} /></i>
         </div>
-        <div className='control control-3' data-id='portofolio'>
+        <div className='control control-3' data-id='portfolio'>
           <i><FontAwesomeIcon icon={faBriefcase} /></i>
         </div>
         <div className='control control-4' data-id='blogs'>
