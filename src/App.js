@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import "./styles/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome,faUser,faBriefcase,faNewspaper,faEnvelopeOpen,faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
 
 import myImage from './assets/images/me.png'
@@ -45,7 +45,7 @@ function App() {
           <div className='left-header'>
             <div className='h-shape'></div>
             <div className='image'>
-              <img src={myImage} alt=''/>
+              <img src={myImage} alt='' />
             </div>
 
           </div>
@@ -53,53 +53,207 @@ function App() {
           <div className='right-header'>
             <h1 className='name'>
               Hi, I'm <span>Sithira Bimsara.</span>
-              <br/>An University Undergraduate
+              <br />An University Undergraduate
             </h1>
             <p>
-            I am an IT university undergraduate with a passion for technology and a solid foundation in programming, database management, network security, and web development. 
-            I am a continuous learner who keeps up to date with the latest trends in the field. 
-            My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
+              I am an IT university undergraduate with a passion for technology and a solid foundation in programming, database management, network security, and web development.
+              I am a continuous learner who keeps up to date with the latest trends in the field.
+              My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
             </p>
-    
+
             <div className='btn-con'>
               <a href='' className='main-btn'>
                 <span className='btn-text'>Download CV</span>
                 <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
-              </a> 
+              </a>
             </div>
 
           </div>
-        </div>  
+        </div>
       </header>
       <main>
 
-        <section className='section sec2 about' id='about'> </section>
-        <section className='section sec3 portofolio' id='portofolio'></section>
+        <section className='section sec2 about' id='about'>
+          <div className='main-title'>
+            <h2>About <span>me</span><span className='bg-text'>my status</span></h2>
+
+          </div>
+          <div className='about-container'>
+            <div className='left-about'>
+              <h4>Information About me</h4>
+              <p>
+
+              </p>
+              <div className='btn-con'>
+                <a href='' className='main-btn'>
+                  <span className='btn-text'>Download CV</span>
+                  <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+                </a>
+              </div>
+            </div>
+            <div className='right-about'>
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br />Completed</p>
+                </div>
+              </div>
+
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br />Completed</p>
+                </div>
+              </div>
+
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br />Completed</p>
+                </div>
+              </div>
+
+              <div className='about-item'>
+                <div className='abt-text'>
+                  <p className='large-text'>2+</p>
+                  <p className='small-text'>Projects <br />Completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='about-stats'>
+            <h4 className='stat-title'>My Skills</h4>
+            <div className='progress-bars'>
+              <div className='progress-bar'>
+                <p className='prog-title'>html5</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>75%</p>
+                  <div className='progress'>
+                    <span className='html'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>css3</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>75%</p>
+                  <div className='progress'>
+                    <span className='css'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>javascript</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>55%</p>
+                  <div className='progress'>
+                    <span className='js'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>java</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>75%</p>
+                  <div className='progress'>
+                    <span className='java'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>python</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>60%</p>
+                  <div className='progress'>
+                    <span className='py'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>mySQL</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>85%</p>
+                  <div className='progress'>
+                    <span className='sql'></span>
+                  </div>
+                </div>
+              </div>
+
+              
+
+            </div>
+          </div>
+          <h4 className='stat-title'>My Timeline</h4>
+          <div className='timeline'>
+            <div className='timeline-item'>
+              <div className='t1-icon'>
+                <i><FontAwesomeIcon icon={faBriefcase} /></i>
+              </div>
+              <p className='t1-duration'>2010 - 2015</p>
+              <h5> <span></span></h5>
+              <p>
+
+              </p>
+            </div>
+
+            <div className='timeline-item'>
+              <div className='t1-icon'>
+                <i><FontAwesomeIcon icon={faBriefcase} /></i>
+              </div>
+              <p className='t1-duration'>2016 - 2019</p>
+              <h5> <span></span></h5>
+              <p>
+
+              </p>
+            </div>
+
+            <div className='timeline-item'>
+              <div className='t1-icon'>
+                <i><FontAwesomeIcon icon={faBriefcase} /></i>
+              </div>
+              <p className='t1-duration'>2021 - Present</p>
+              <h5> <span></span></h5>
+              <p>
+
+              </p>
+            </div>
+
+          </div>
+        </section>
+        <section className='section sec3 portfolio' id='portfolio'>
+        
+        </section>
         <section className='section sec4 blogs' id='blogs'></section>
         <section className='section sec5 contact' id='contact'></section>
 
       </main>
 
-      <div className='controls' onClick={(event)=> {handleToggleIcon(event);handleToggleSection(event)}}>
+      <div className='controls' onClick={(event) => { handleToggleIcon(event); handleToggleSection(event) }}>
 
-        <div className='control control-1 active-btn' data-id= 'home' >
+        <div className='control control-1 active-btn' data-id='home' >
           <i><FontAwesomeIcon icon={faHome} /></i>
         </div>
-        <div className='control control-2' data-id= 'about' >
+        <div className='control control-2' data-id='about' >
           <i><FontAwesomeIcon icon={faUser} /></i>
         </div>
-        <div className='control control-3' data-id= 'portofolio'>
+        <div className='control control-3' data-id='portfolio'>
           <i><FontAwesomeIcon icon={faBriefcase} /></i>
         </div>
-        <div className='control control-4' data-id= 'blogs'>
+        <div className='control control-4' data-id='blogs'>
           <i><FontAwesomeIcon icon={faNewspaper} /></i>
         </div>
-        <div className='control control-5' data-id= 'contact'>
+        <div className='control control-5' data-id='contact'>
           <i><FontAwesomeIcon icon={faEnvelopeOpen} /></i>
         </div>
 
       </div>
-      
+
     </div>
   );
 }
