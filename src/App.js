@@ -227,7 +227,29 @@ function App() {
           </div>
         </section>
         <section className='section sec3 portfolio' id='portfolio'>
-        
+        <div className='main-title'>
+            <h2>My <span>Portfolio</span><span className='bg-text'>my work</span></h2>
+
+          </div>
+          <p className='port-text'>
+            Here are my work
+          </p>
+          <div className='portfolios'>
+            <div className='portfolio-item'>
+              <div className='image'>
+                <img src='' alt=''/>
+              </div>
+              <div className='hover-items'>
+                <h3>Project Source</h3>
+                <div className='icons'>
+                  <a href='' target='_blank'>
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </section>
         <section className='section sec4 blogs' id='blogs'></section>
         <section className='section sec5 contact' id='contact'></section>
