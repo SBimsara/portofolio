@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import "./styles/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload,faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
 
 import myImage from './assets/images/me.png'
@@ -185,7 +185,7 @@ function App() {
                 </div>
               </div>
 
-              
+
 
             </div>
           </div>
@@ -227,7 +227,7 @@ function App() {
           </div>
         </section>
         <section className='section sec3 portfolio' id='portfolio'>
-        <div className='main-title'>
+          <div className='main-title'>
             <h2>My <span>Portfolio</span><span className='bg-text'>my work</span></h2>
 
           </div>
@@ -237,7 +237,7 @@ function App() {
           <div className='portfolios'>
             <div className='portfolio-item'>
               <div className='image'>
-                <img src='' alt=''/>
+                <img src='' alt='' />
               </div>
               <div className='hover-items'>
                 <h3>Project Source</h3>
@@ -252,7 +252,101 @@ function App() {
           </div>
         </section>
         <section className='section sec4 blogs' id='blogs'></section>
-        <section className='section sec5 contact' id='contact'></section>
+        <section className='section sec5 contact' id='contact'>
+          <div className='contact-container'>
+            <div className='main-title'>
+              <h2>Contact <span>Me</span><span className='bg-text'>My Contacts</span></h2>
+            </div>
+            <div className='contact-content-con'>
+                <div className='left-contact'>
+                  <h4>Contact me here</h4>
+                  <p></p>
+                  <div className='contact-info'>
+                    <div className='contact-item'>
+                      <div className='icon'>
+                        <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                        Location
+                      </div>
+                      <p>
+                        : Matara, Sri Lanka
+                      </p>
+                    </div>
+
+                    <div className='contact-item'>
+                      <div className='icon'>
+                        <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                        Email
+                      </div>
+                      <p>
+                        : basnayakesb.20@uom.lk
+                      </p>
+                    </div>
+
+                    <div className='contact-item'>
+                      <div className='icon'>
+                        <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                        Languages
+                      </div>
+                      <p>
+                        : Sinhala, English
+                      </p>
+                    </div>
+
+                    
+
+                  </div>
+                  <div className='contact-icons'>
+                    <div className='contact-icon'>
+                      <a href='' target='_blank'>
+                        <i></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className='right-contact'>
+                  <form action='' className='contact-form'>
+                    <div className='input-control i-c-2'>
+                      <input type='text' required placeholder='YOUR NAME'/>
+                      <input type='email' required placeholder='YOUR EMAIL'/>
+                    </div>
+
+                    <div className='input-control'>
+                      <input type='text' required placeholder='ENTER SUBJECT'/>
+                      
+                    </div>
+
+                    <div className='input-control'>
+                      <textarea name='' id='' cols='15' rows='8' placeholder='Message 
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      Here...'></textarea>
+                      
+                    </div>
+
+                    <div className='submit-btn'>
+                      <a href='' className='main-btn'>
+                        <span className='btn-text'>Download CV</span>
+                        <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+                      </a>
+                    </div>
+
+
+                  </form>
+                </div>
+            </div>
+          </div>
+        </section>
 
       </main>
 
