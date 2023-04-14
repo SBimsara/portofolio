@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import "./styles/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload,faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
 
 import myImage from './assets/images/me.png'
@@ -55,11 +55,9 @@ function App() {
               Hi, I'm <span>Sithira Bimsara.</span>
               <br />An University Undergraduate
             </h1>
-            <p>
-              I am an IT university undergraduate with a passion for technology and a solid foundation in programming, database management, network security, and web development.
+            <p>I am an IT university undergraduate with a passion for technology and a solid foundation in programming, database management, network security, and web development.
               I am a continuous learner who keeps up to date with the latest trends in the field.
-              My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.
-            </p>
+              My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.</p>
 
             <div className='btn-con'>
               <a href='' className='main-btn'>
@@ -81,11 +79,15 @@ function App() {
           <div className='about-container'>
             <div className='left-about'>
               <h4>Information About me</h4>
-              <p>
-
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet labore nihil obcaecati consequatur. Debitis error doloremque,
+                vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
+                delectus dolore fugiat exercitationem a,
+                ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Harum non necessitatibus deleniti eum soluta.</p>
               <div className='btn-con'>
-                <a href='' className='main-btn'>
+                <a href='#' className='main-btn'>
                   <span className='btn-text'>Download CV</span>
                   <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
                 </a>
@@ -156,6 +158,16 @@ function App() {
               </div>
 
               <div className='progress-bar'>
+                <p className='prog-title'>c</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>75%</p>
+                  <div className='progress'>
+                    <span className='js'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
                 <p className='prog-title'>java</p>
                 <div className='progress-con'>
                   <p className='prog-text'>75%</p>
@@ -171,6 +183,16 @@ function App() {
                   <p className='prog-text'>60%</p>
                   <div className='progress'>
                     <span className='py'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>react js</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>60%</p>
+                  <div className='progress'>
+                    <span className='reactjs'></span>
                   </div>
                 </div>
               </div>
@@ -196,7 +218,7 @@ function App() {
                 <i><FontAwesomeIcon icon={faBriefcase} /></i>
               </div>
               <p className='t1-duration'>2010 - 2015</p>
-              <h5> <span></span></h5>
+              <h5>G.C.E. Ordinary Level <br /><br /><span>Thelijjawila Central College</span></h5>
               <p>
 
               </p>
@@ -207,7 +229,7 @@ function App() {
                 <i><FontAwesomeIcon icon={faBriefcase} /></i>
               </div>
               <p className='t1-duration'>2016 - 2019</p>
-              <h5> <span></span></h5>
+              <h5>G.C.E. Advanced Level <br /><br /><span>Thelijjawila Central College</span></h5>
               <p>
 
               </p>
@@ -218,7 +240,7 @@ function App() {
                 <i><FontAwesomeIcon icon={faBriefcase} /></i>
               </div>
               <p className='t1-duration'>2021 - Present</p>
-              <h5> <span></span></h5>
+              <h5>BSc ( Hons ) in Information Technology <br /><br /><span>University of Moratuwa</span></h5>
               <p>
 
               </p>
@@ -258,65 +280,65 @@ function App() {
               <h2>Contact <span>Me</span><span className='bg-text'>My Contacts</span></h2>
             </div>
             <div className='contact-content-con'>
-                <div className='left-contact'>
-                  <h4>Contact me here</h4>
-                  <p></p>
-                  <div className='contact-info'>
-                    <div className='contact-item'>
-                      <div className='icon'>
-                        <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
-                        Location
-                      </div>
-                      <p>
-                        : Matara, Sri Lanka
-                      </p>
+              <div className='left-contact'>
+                <h4>Contact me here</h4>
+                <p></p>
+                <div className='contact-info'>
+                  <div className='contact-item'>
+                    <div className='icon'>
+                      <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                      Location
                     </div>
-
-                    <div className='contact-item'>
-                      <div className='icon'>
-                        <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
-                        Email
-                      </div>
-                      <p>
-                        : basnayakesb.20@uom.lk
-                      </p>
-                    </div>
-
-                    <div className='contact-item'>
-                      <div className='icon'>
-                        <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
-                        Languages
-                      </div>
-                      <p>
-                        : Sinhala, English
-                      </p>
-                    </div>
-
-                    
-
+                    <p>
+                      : Matara, Sri Lanka
+                    </p>
                   </div>
-                  <div className='contact-icons'>
-                    <div className='contact-icon'>
-                      <a href='' target='_blank'>
-                        <i></i>
-                      </a>
+
+                  <div className='contact-item'>
+                    <div className='icon'>
+                      <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                      Email
                     </div>
+                    <p>
+                      : basnayakesb.20@uom.lk
+                    </p>
+                  </div>
+
+                  <div className='contact-item'>
+                    <div className='icon'>
+                      <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                      Languages
+                    </div>
+                    <p>
+                      : Sinhala, English
+                    </p>
+                  </div>
+
+
+
+                </div>
+                <div className='contact-icons'>
+                  <div className='contact-icon'>
+                    <a href='' target='_blank'>
+                      <i></i>
+                    </a>
                   </div>
                 </div>
-                <div className='right-contact'>
-                  <form action='' className='contact-form'>
-                    <div className='input-control i-c-2'>
-                      <input type='text' required placeholder='YOUR NAME'/>
-                      <input type='email' required placeholder='YOUR EMAIL'/>
-                    </div>
+              </div>
+              <div className='right-contact'>
+                <form action='' className='contact-form'>
+                  <div className='input-control i-c-2'>
+                    <input type='text' required placeholder='YOUR NAME' />
+                    <input type='email' required placeholder='YOUR EMAIL' />
+                  </div>
 
-                    <div className='input-control'>
-                      <input type='text' required placeholder='ENTER SUBJECT'/>
-                      
-                    </div>
+                  <div className='input-control'>
+                    <input type='text' required placeholder='ENTER SUBJECT' />
 
-                    <div className='input-control'>
-                      <textarea name='' id='' cols='15' rows='8' placeholder='Message 
+                  </div>
+
+                  <div className='input-control'>
+                    <textarea name='' id='' cols='15' rows='8' placeholder='Message 
                       
                       
                       
@@ -331,19 +353,19 @@ function App() {
                       
                       
                       Here...'></textarea>
-                      
-                    </div>
 
-                    <div className='submit-btn'>
-                      <a href='' className='main-btn'>
-                        <span className='btn-text'>Download CV</span>
-                        <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
-                      </a>
-                    </div>
+                  </div>
+
+                  <div className='submit-btn'>
+                    <a href='' className='main-btn'>
+                      <span className='btn-text'>Download CV</span>
+                      <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+                    </a>
+                  </div>
 
 
-                  </form>
-                </div>
+                </form>
+              </div>
             </div>
           </div>
         </section>
