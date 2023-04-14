@@ -390,6 +390,7 @@ section {
     grid-template-columns: repeat(2,1fr);
     grid-gap:2rem;
     padding-bottom: 3rem;
+    padding-left: 1.5rem;
 
     .timeline-item{
         position: relative;
@@ -530,36 +531,31 @@ section {
     display: flex;
     padding-top: 3.5rem;
 
-    .left-contact{
+    .left-contact {
         flex: 2;
-
-        h4{
+        h4 {
             margin-top: 1rem;
             font-size: 2rem;
             text-transform: uppercase;
         }
-
-        p{
+        p {
             margin: 1rem 0;
             line-height: 2rem;
         }
 
-        .contact-info{
-            .contact-item{
+        .contact-info {
+            .contact-item {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-
-                P{
+                p {
                     margin: .3rem 0 !important;
                     padding: 0 !important;
                 }
-
-                .icon{
+                .icon {
                     display: grid;
                     grid-template-columns: 40px 1fr;
-
-                    i{
+                    i {
                         display: flex;
                         align-items: center;
                         font-size: 1.3rem;
@@ -568,11 +564,10 @@ section {
             }
         }
 
-        .contatc-icon{
+        .contact-icon {
             display: flex;
             margin-top: 2rem;
-
-            a{
+            a {
                 display: flex;
                 align-items: center;
                 color: var(--color-white);
@@ -584,16 +579,11 @@ section {
                 border-radius: 50%;
                 margin: 0 .4rem;
                 transition: all .4s ease-in-out;
-
-                &:hover{
+                &:hover {
                     background-color: var(--color-secondary);
-                    i{
-                        color: var(--color-primary);
-                    }
-
+                    i { color: var(--color-primary); }
                 }
-
-                i{
+                i {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -602,6 +592,7 @@ section {
             }
         }
     }
+
 
     .right-contact{
         flex: 3;

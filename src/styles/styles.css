@@ -344,6 +344,7 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
+  padding-left: 1.5rem;
 }
 .timeline .timeline-item {
   position: relative;
@@ -489,7 +490,7 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.contact-content-con .left-contact .contact-info .contact-item P {
+.contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
   padding: 0 !important;
 }
@@ -502,11 +503,11 @@ section {
   align-items: center;
   font-size: 1.3rem;
 }
-.contact-content-con .left-contact .contatc-icon {
+.contact-content-con .left-contact .contact-icon {
   display: flex;
   margin-top: 2rem;
 }
-.contact-content-con .left-contact .contatc-icon a {
+.contact-content-con .left-contact .contact-icon a {
   display: flex;
   align-items: center;
   color: var(--color-white);
@@ -519,13 +520,13 @@ section {
   margin: 0 0.4rem;
   transition: all 0.4s ease-in-out;
 }
-.contact-content-con .left-contact .contatc-icon a:hover {
+.contact-content-con .left-contact .contact-icon a:hover {
   background-color: var(--color-secondary);
 }
-.contact-content-con .left-contact .contatc-icon a:hover i {
+.contact-content-con .left-contact .contact-icon a:hover i {
   color: var(--color-primary);
 }
-.contact-content-con .left-contact .contatc-icon a i {
+.contact-content-con .left-contact .contact-icon a i {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import "./styles/styles.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faBriefcase, faNewspaper, faEnvelopeOpen, faDownload, faMapMarkerAlt, faEnvelope , faMobilePhone, faGlobeAfrica} from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF,faGithub,faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { useEffect } from 'react';
 
-import myImage from './assets/images/me.png'
+import myImage from './assets/images/me.png';
+import canCrusher from './assets/images/can_crusher.jpeg'
 
 function App() {
 
@@ -123,7 +125,7 @@ function App() {
               </div>
             </div>
           </div>
-
+          
           <div className='about-stats'>
             <h4 className='stat-title'>My Skills</h4>
             <div className='progress-bars'>
@@ -158,11 +160,31 @@ function App() {
               </div>
 
               <div className='progress-bar'>
+                <p className='prog-title'>react js</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>60%</p>
+                  <div className='progress'>
+                    <span className='reactjs'></span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='progress-bar'>
+                <p className='prog-title'>mySQL</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>85%</p>
+                  <div className='progress'>
+                    <span className='sql'></span>
+                  </div>
+                </div>
+              </div>
+              <br/>
+              <div className='progress-bar'>
                 <p className='prog-title'>c</p>
                 <div className='progress-con'>
                   <p className='prog-text'>75%</p>
                   <div className='progress'>
-                    <span className='js'></span>
+                    <span className='c'></span>
                   </div>
                 </div>
               </div>
@@ -186,28 +208,6 @@ function App() {
                   </div>
                 </div>
               </div>
-
-              <div className='progress-bar'>
-                <p className='prog-title'>react js</p>
-                <div className='progress-con'>
-                  <p className='prog-text'>60%</p>
-                  <div className='progress'>
-                    <span className='reactjs'></span>
-                  </div>
-                </div>
-              </div>
-
-              <div className='progress-bar'>
-                <p className='prog-title'>mySQL</p>
-                <div className='progress-con'>
-                  <p className='prog-text'>85%</p>
-                  <div className='progress'>
-                    <span className='sql'></span>
-                  </div>
-                </div>
-              </div>
-
-
 
             </div>
           </div>
@@ -254,17 +254,17 @@ function App() {
 
           </div>
           <p className='port-text'>
-            Here are my work
+          Here is some of my work that I've done in various programming languages.
           </p>
           <div className='portfolios'>
             <div className='portfolio-item'>
               <div className='image'>
-                <img src='' alt='' />
+                <img src={canCrusher} alt='' />
               </div>
               <div className='hover-items'>
                 <h3>Project Source</h3>
                 <div className='icons'>
-                  <a href='' target='_blank'>
+                  <a href='' target='_blank' className='icon'>
                     <i></i>
                   </a>
                 </div>
@@ -296,7 +296,7 @@ function App() {
 
                   <div className='contact-item'>
                     <div className='icon'>
-                      <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                      <i><FontAwesomeIcon icon={faEnvelope} /></i>
                       Email
                     </div>
                     <p>
@@ -306,7 +306,17 @@ function App() {
 
                   <div className='contact-item'>
                     <div className='icon'>
-                      <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                      <i><FontAwesomeIcon icon={faMobilePhone} /></i>
+                      Mobile Number
+                    </div>
+                    <p>
+                      : 0774405741
+                    </p>
+                  </div>
+
+                  <div className='contact-item'>
+                    <div className='icon'>
+                      <i><FontAwesomeIcon icon={faGlobeAfrica} /></i>
                       Languages
                     </div>
                     <p>
@@ -319,9 +329,19 @@ function App() {
                 </div>
                 <div className='contact-icons'>
                   <div className='contact-icon'>
+                    
                     <a href='' target='_blank'>
-                      <i></i>
+                      <i><FontAwesomeIcon icon={faGithub} /></i>
                     </a>
+
+                    <a href='' target='_blank'>
+                      <i><FontAwesomeIcon icon={faFacebookF} /></i>
+                    </a>
+
+                    <a href='' target='_blank'>
+                      <i><FontAwesomeIcon icon={faLinkedin} /></i>
+                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -338,21 +358,7 @@ function App() {
                   </div>
 
                   <div className='input-control'>
-                    <textarea name='' id='' cols='15' rows='8' placeholder='Message 
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      Here...'></textarea>
+                    <textarea name='' id='' cols='15' rows='8' placeholder='Message Here...'></textarea>
 
                   </div>
 
