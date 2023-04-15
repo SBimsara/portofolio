@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 
 import myImage from './assets/images/me.png';
 import canCrusher from './assets/images/can_crusher.jpeg';
+import quizz from './assets/images/quizz.jpg';
 
 import { saveAs } from 'file-saver';
 import cvPDF from './assets/Sithira_Bimsara.pdf';
@@ -121,14 +122,7 @@ function App() {
               <div className='about-item'>
                 <div className='abt-text'>
                   <p className='large-text'>2+</p>
-                  <p className='small-text'>Projects <br />Completed</p>
-                </div>
-              </div>
-
-              <div className='about-item'>
-                <div className='abt-text'>
-                  <p className='large-text'>2+</p>
-                  <p className='small-text'>Projects <br />Completed</p>
+                  <p className='small-text'>Years of <br />experience</p>
                 </div>
               </div>
 
@@ -193,7 +187,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <br/>
+              <br/><br/><br/>
               <div className='progress-bar'>
                 <p className='prog-title'>c</p>
                 <div className='progress-con'>
@@ -220,6 +214,16 @@ function App() {
                   <p className='prog-text'>60%</p>
                   <div className='progress'>
                     <span className='py'></span>
+                  </div>
+                </div>
+              </div>
+              <br/><br/><br/>
+              <div className='progress-bar'>
+                <p className='prog-title'>springboot</p>
+                <div className='progress-con'>
+                  <p className='prog-text'>50%</p>
+                  <div className='progress'>
+                    <span className='sb'></span>
                   </div>
                 </div>
               </div>
@@ -291,7 +295,7 @@ function App() {
 
             <div className='portfolio-item'>
               <div className='image'>
-                <img src={canCrusher} alt='' />
+                <img src={quizz} alt='' />
               </div>
               <div className='hover-items'>
                 <h3>Project Source</h3>
