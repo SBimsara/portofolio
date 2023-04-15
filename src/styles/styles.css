@@ -558,13 +558,12 @@ section {
 .contact-content-con .right-contact .i-c-2 :last-child {
   margin-left: 1.5rem;
 }
-.contact-content-con .right-contact .submit-btn {
-  display: flex;
-  justify-content: flex-start;
+.contact-content-con .right-contact .main-btn .btn-text {
+  padding: 0.7rem 2rem;
 }
 
 /* independent components */
-.btn-con {
+.btn-con, .submit-btn {
   display: flex;
   align-self: flex-start;
 }

@@ -44,9 +44,17 @@ function App() {
     clickedSection.classList.add('active');
   }
 
-    const handleCVClick = () => {
-      saveAs(cvPDF, 'Sithira_Bimsara.pdf');
-    }
+  //function to download CV
+  const handleCVClick = () => {
+    saveAs(cvPDF, 'Sithira_Bimsara.pdf');
+  }
+
+  //function to submit form
+  function formSubmit(event) {
+    event.preventDefault();
+    const form = document.getElementById('my-form');
+    form.submit();
+  }
 
   return (
     <div className="main-content">
@@ -375,24 +383,25 @@ function App() {
               </div>
               <div className='right-contact'>
 
-                <form action='' className='contact-form'>
+                <form action="https://formsubmit.co/fa9e241cfa4853907279a1ab0f998f8d" method="POST" className='contact-form' id='my-form'>
+
                   <div className='input-control i-c-2'>
-                    <input type='text' required placeholder='YOUR NAME' />
-                    <input type='email' required placeholder='YOUR EMAIL' />
+                    <input type='text' name='name' required placeholder='YOUR NAME' id='name'/>
+                    <input type='email' name="email" required placeholder='YOUR EMAIL' id='email'/>
                   </div>
 
                   <div className='input-control'>
-                    <input type='text' required placeholder='ENTER SUBJECT' />
+                    <input type='text' name="_subject" required placeholder='ENTER SUBJECT' id='subject'/>
                   </div>
 
                   <div className='input-control'>
-                    <textarea name='' id='' cols='15' rows='8' placeholder='Message Here...'></textarea>
+                    <textarea name='message' id='msg' cols='15' rows='8' placeholder='MESSAGE'></textarea>
                   </div>
 
                   <div className='submit-btn'>
-                    <a href='' className='main-btn'>
-                      <span className='btn-text'>Download CV</span>
-                      <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
+                    <a href="#" className='main-btn' onClick={formSubmit}>
+                      <span className='btn-text'>Submit</span>
+                      {/* <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span> */}
                     </a>
                   </div>
 
