@@ -7,7 +7,11 @@ import { faFacebookF,faGithub,faLinkedin} from '@fortawesome/free-brands-svg-ico
 import { useEffect } from 'react';
 
 import myImage from './assets/images/me.png';
-import canCrusher from './assets/images/can_crusher.jpeg'
+import canCrusher from './assets/images/can_crusher.jpeg';
+
+import { saveAs } from 'file-saver';
+import cvPDF from './assets/Sithira_Bimsara.pdf';
+
 
 function App() {
 
@@ -40,6 +44,10 @@ function App() {
     clickedSection.classList.add('active');
   }
 
+    const handleCVClick = () => {
+      saveAs(cvPDF, 'Sithira_Bimsara.pdf');
+    }
+
   return (
     <div className="main-content">
       <header className='section sec1 header active' id='home'>
@@ -62,7 +70,7 @@ function App() {
               My portfolio showcases my technical skills and creativity, and I look forward to discussing my experience and achievements with you.</p>
 
             <div className='btn-con'>
-              <a href='' className='main-btn'>
+              <a href='#' className='main-btn' onClick={handleCVClick}>
                 <span className='btn-text'>Download CV</span>
                 <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
               </a>
@@ -81,15 +89,14 @@ function App() {
           <div className='about-container'>
             <div className='left-about'>
               <h4>Information About me</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet labore nihil obcaecati consequatur. Debitis error doloremque,
-                vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-                delectus dolore fugiat exercitationem a,
-                ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Harum non necessitatibus deleniti eum soluta.</p>
+              <p>I am an IT university undergraduate with a passion for technology and a solid foundation in programming, 
+                database management, network security, and web development. 
+                I am a continuous learner who keeps up to date with the latest trends in the field. <br /> <br /> 
+                Overall, my diverse skillset, 
+                passion for learning, and hands-on experience make me a strong candidate for any IT-related role, 
+                and I look forward to discussing my achievements and experience with you.</p>
               <div className='btn-con'>
-                <a href='#' className='main-btn'>
+                <a href='#' className='main-btn' onClick={handleCVClick}>
                   <span className='btn-text'>Download CV</span>
                   <span className='btn-icon'><i><FontAwesomeIcon icon={faDownload} /></i></span>
                 </a>
@@ -213,12 +220,14 @@ function App() {
           </div>
           <h4 className='stat-title'>My Timeline</h4>
           <div className='timeline'>
+            
+
             <div className='timeline-item'>
               <div className='t1-icon'>
                 <i><FontAwesomeIcon icon={faBriefcase} /></i>
               </div>
-              <p className='t1-duration'>2010 - 2015</p>
-              <h5>G.C.E. Ordinary Level <br /><br /><span>Thelijjawila Central College</span></h5>
+              <p className='t1-duration'>2021 - Present</p>
+              <h5>BSc ( Hons ) in Information Technology <br /><br /><span>University of Moratuwa</span></h5>
               <p>
 
               </p>
@@ -239,12 +248,13 @@ function App() {
               <div className='t1-icon'>
                 <i><FontAwesomeIcon icon={faBriefcase} /></i>
               </div>
-              <p className='t1-duration'>2021 - Present</p>
-              <h5>BSc ( Hons ) in Information Technology <br /><br /><span>University of Moratuwa</span></h5>
+              <p className='t1-duration'>2010 - 2015</p>
+              <h5>G.C.E. Ordinary Level <br /><br /><span>Thelijjawila Central College</span></h5>
               <p>
 
               </p>
             </div>
+            
 
           </div>
         </section>
@@ -264,12 +274,30 @@ function App() {
               <div className='hover-items'>
                 <h3>Project Source</h3>
                 <div className='icons'>
-                  <a href='' target='_blank' className='icon'>
-                    <i></i>
+                  <a href='#' target='_blank' className='icon'>
+                    <i><FontAwesomeIcon icon={faGithub} /></i>
                   </a>
                 </div>
               </div>
             </div>
+
+            <div className='portfolio-item'>
+              <div className='image'>
+                <img src={canCrusher} alt='' />
+              </div>
+              <div className='hover-items'>
+                <h3>Project Source</h3>
+                <div className='icons'>
+                  <a href='https://github.com/SBimsara/Maximus-Frontend.git' target='_blank' className='icon'>
+                    <i><FontAwesomeIcon icon={faGithub} /></i>
+                  </a>
+                  <a href='https://github.com/SBimsara/Quizz-Backend.git' target='_blank' className='icon'>
+                    <i><FontAwesomeIcon icon={faGithub} /></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
 
           </div>
         </section>
@@ -346,6 +374,7 @@ function App() {
                 </div>
               </div>
               <div className='right-contact'>
+
                 <form action='' className='contact-form'>
                   <div className='input-control i-c-2'>
                     <input type='text' required placeholder='YOUR NAME' />
@@ -354,12 +383,10 @@ function App() {
 
                   <div className='input-control'>
                     <input type='text' required placeholder='ENTER SUBJECT' />
-
                   </div>
 
                   <div className='input-control'>
                     <textarea name='' id='' cols='15' rows='8' placeholder='Message Here...'></textarea>
-
                   </div>
 
                   <div className='submit-btn'>
