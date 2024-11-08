@@ -135,7 +135,7 @@ function App() {
             <div className="right-about">
               <div className="about-item">
                 <div className="abt-text">
-                  <p className="large-text">2</p>
+                  <p className="large-text">5+</p>
                   <p className="small-text">
                     Projects <br />
                     Completed
@@ -145,7 +145,7 @@ function App() {
 
               <div className="about-item">
                 <div className="abt-text">
-                  <p className="large-text">2+</p>
+                  <p className="large-text">3+</p>
                   <p className="small-text">
                     Years of <br />
                     experience
@@ -276,6 +276,21 @@ function App() {
                 BSc ( Hons ) in Information Technology <br />
                 <br />
                 <span>University of Moratuwa</span>
+              </h5>
+              <p></p>
+            </div>
+
+            <div className="timeline-item">
+              <div className="t1-icon">
+                <i>
+                  <FontAwesomeIcon icon={faBriefcase} />
+                </i>
+              </div>
+              <p className="t1-duration">2024 Jan - 2024 Jul</p>
+              <h5>
+                Software Engineer Intern <br />
+                <br />
+                <span>CodeGen International</span>
               </h5>
               <p></p>
             </div>
